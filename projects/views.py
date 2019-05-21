@@ -8,7 +8,8 @@ def my_view(request):
 
 @view_config(route_name='victor', renderer='templates/victor.jinja2')
 def victor(request):
-    return {'project': 'project'}
+    color = 'aquamarine'
+    return {'project': 'project', 'color': color}
 
 
 @view_config(route_name='other', renderer='templates/other.jinja2')
